@@ -1,6 +1,6 @@
 FROM alpine
-WORKDIR /root/hello-world
-COPY Hello.java /root/hello-world
+WORKDIR /root/calculator
+COPY /src/Calculator.scala /root/calculator
 
 RUN apk add openjdk8
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
